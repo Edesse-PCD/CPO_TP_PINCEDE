@@ -15,15 +15,37 @@ System.out.println("Bouteille de " + nom +" (" + degreAlcool +
 }
 
     String nom;
-    float degreAlcool;
+    double degreAlcool;
     String brasserie;
     boolean ouverte;
     
-BouteilleBiere uneBiere = new BouteilleBiere() ;
-    uneBiere.nom="Cuvée des trolls";
+    
+public BouteilleBiere(String unNom, double unDegre, String uneBrasserie){ 
+nom = unNom; 
+degreAlcool = unDegre; 
+brasserie = uneBrasserie; 
+ouverte = false; 
+} 
+public boolean Decapsuler(){
+    if (ouverte ==false){
+        ouverte=true;
+        return true;
+    }
+    if (ouverte ==true){
+        System.out.println("erreur, biere deja ouverte");
+        return false; 
+    }
+    return Decapsuler();
+}
+}
 
     
-    
-    
-    
-}
+
+
+ 
+
+
+
+
+
+
