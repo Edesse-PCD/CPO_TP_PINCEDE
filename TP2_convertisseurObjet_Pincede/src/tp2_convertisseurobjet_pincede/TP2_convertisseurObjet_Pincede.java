@@ -12,16 +12,19 @@ import java.util.Scanner;
  */
 public class TP2_convertisseurObjet_Pincede {
 
+   
     /**
-     * @param args the command line arguments
+     * @padram args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
      Scanner sc = new Scanner(System.in);    
     Convertisseur Convertisseur1 = new Convertisseur();
     
+    
     Convertisseur1.CelciusVersKelvin (10);
     System.out.println(Convertisseur1.nbConversions);
+    
     }
     
 }
