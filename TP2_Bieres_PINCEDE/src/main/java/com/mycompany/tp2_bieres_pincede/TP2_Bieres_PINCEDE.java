@@ -16,7 +16,7 @@ BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7,"Dubuisson");
     uneBiere.nom="Cuvée des trolls";
     uneBiere.degreAlcool = 7.0 ; 
     uneBiere.brasserie = "Dubuisson";
-    uneBiere.ouverte = false;
+    uneBiere.ouverte = true;
     uneBiere.lireEtiquette();
     
     
@@ -32,12 +32,17 @@ BouteilleBiere uneBiere2=new BouteilleBiere("Leffe",6.6,"Dubuisson");//je crée 
 BouteilleBiere uneBiere3 = new BouteilleBiere("Leffe Blonde", 6, "Abbaye de Leffe");
 BouteilleBiere uneBiere4 = new BouteilleBiere("Chimay Bleue", 9, "Abbaye de Scourmont");
 BouteilleBiere uneBiere5 = new BouteilleBiere("Heineken", 5, "Heineken International");
-  uneBiere2.lireEtiquette();
+  uneBiere5.lireEtiquette();
   uneBiere3.lireEtiquette();
   uneBiere4.lireEtiquette();
   
-  
+ //Je teste ma fonction decapsuler
+ //System.out.println(uneBiere2.Decapsuler());
  
-
+ 
+ //Je teste ma classe toString()
+  System.out.println(uneBiere2);
+ System.out.println(uneBiere); //Je l'ai fermée pour voir ce que ça donne
     }
+    
 }
