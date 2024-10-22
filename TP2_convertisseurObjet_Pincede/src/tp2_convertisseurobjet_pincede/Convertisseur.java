@@ -32,20 +32,20 @@ public double CelciusVersFarenheit (double tCelcius){
 
 public double KelvinVersFarenheit (double tCelcius){
     tCelcius+= -273+CelciusVersFarenheit(tCelcius) ;
-    nbConversions+=1;
+   
     return tCelcius;
 }
 
 
 public double FarenheitVersKelvin (double tFarenheit){
     tFarenheit+= +273+ FarenheitVersCelcius(tFarenheit);
-    nbConversions+=1;
-    return tFarenheit;
+       return tFarenheit;
 }
 
 @Override 
 public String toString () { 
 return "nb de conversions"+ nbConversions;
+
 }
 
 
