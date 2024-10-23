@@ -11,4 +11,23 @@ package tp2_relation_1_pincede_edesse_carrera_valentin;
  */
 public class Voiture {
     
+    String Modele;
+    String Marque;
+    int PuissanceCV;
+    Personne Proprietaire;
+
+    public Voiture(String Modele, String Marque, int PuissanceCV) {
+        this.Modele = Modele;
+        this.Marque = Marque;
+        this.PuissanceCV = PuissanceCV;
+        Proprietaire=null;
+    }
+
+    @Override
+    public String toString() {
+        return "Voiture{" + "Modele=" + Modele + ", Marque=" + Marque + ", PuissanceCV=" + PuissanceCV + '}';
+    }
+    
 }
+
+  
