@@ -10,5 +10,13 @@ package tp2_manip_pincede_edesse;
  * @author Edess
  */
 public class Tartiflette {
+        int nbCalories;
     
+     public Tartiflette(int nbCalories) {
+        this.nbCalories = nbCalories;
+     }
 }
+
+    
+    
+

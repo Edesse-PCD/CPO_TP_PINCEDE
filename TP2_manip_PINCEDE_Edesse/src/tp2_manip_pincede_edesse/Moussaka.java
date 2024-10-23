@@ -10,5 +10,10 @@ package tp2_manip_pincede_edesse;
  * @author Edess
  */
 public class Moussaka {
+        int nbCalories;
+     public Moussaka(int nbCalories) {
+        this.nbCalories = nbCalories;
+     }   
+
     
 }
