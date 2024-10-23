@@ -40,7 +40,7 @@ public class TP2_convertisseurObjet_Pincede {
     double valeur = sc.nextDouble();
     
     
-    System.out.println("Quelle conversion souhaitez vous faire ?"
+    System.out.println("Quelle conversion souhaitez vous faire ? "
             + "1 : Celcius vers kelvin "
             + "2 : Celcius vers Farenheit "
             + "3 : Farenheit vers Celcius "
