@@ -12,7 +12,7 @@ public class Epee extends Arme {
     
     int finesse; 
 
-    public Epee(int finesse, String nom, int N_attaque) {
+    public Epee(String nom,int finesse,  int N_attaque) {
         super(nom, N_attaque);
         if (finesse<=100){
            this.finesse = finesse;

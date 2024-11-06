@@ -14,7 +14,7 @@ public class TP3_Heroic_Fantasy_PINCEDE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Epee Exca  = new Epee("Excalibur",7,5);
     }
     
 }
