@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_pincede;
+package Armes;
 
 /**
  *
@@ -12,7 +12,7 @@ public abstract class Arme {
    private String nom;
    private int Nattaque;
 
-    public Arme(String nom, int N_attaque) {
+    public Arme(String nom, int Nattaque) {
         this.nom = nom;
         if (Nattaque<=100){
             this.Nattaque = Nattaque;
@@ -38,6 +38,11 @@ public abstract class Arme {
 
     public void setNattaque(int Nattaque) {
         this.Nattaque = Nattaque;
+    }
+
+    @Override
+    public String toString() {
+        return "Arme{" + "nom=" + nom + ", Nattaque=" + Nattaque + '}';
     }
    
    

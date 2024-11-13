@@ -44,7 +44,7 @@ abstract public class Personnage {
              Sac_à_dos.add(arme);      
          }
          
-          arme_portée = NULL
+        
          
      }
 }
