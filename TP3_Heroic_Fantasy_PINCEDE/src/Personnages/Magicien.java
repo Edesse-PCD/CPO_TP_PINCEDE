@@ -11,6 +11,7 @@ package Personnages;
 public class Magicien extends Personnage {
     
     boolean confirme;
+    private int nbmagiciens = 0;
 
     //On crée le constructeur associé
     public Magicien(String nom,  int vie,boolean confirme) {
@@ -22,7 +23,15 @@ public class Magicien extends Personnage {
     public void setconfirmé(boolean confirme) {
         this.confirme = confirme;
     }
+
+    public int getNbmagiciens() {
+        return nbmagiciens;
+    }
     
-    
-    
-}
+       // Getter pour confirme
+    public boolean isConfirme() {
+        return confirme;
+    }
+ 
+    }
+

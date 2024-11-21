@@ -29,7 +29,10 @@ public class Epee extends Arme {
         return "Epee{" + "finesse=" + finesse + '}';
     }
 
-        
+          
+    public int getMultiplicateur() {
+        return finesse;  // Le multiplicateur est la finesse de l'épée
+    }
     }
     
     

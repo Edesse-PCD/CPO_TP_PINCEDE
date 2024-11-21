@@ -75,17 +75,82 @@ Epee LameNoire = new Epee("Lame Noire", 5, 6);
 Magicien Morgane = new Magicien("Morgane", 55, false);
 Guerrier Aragon = new Guerrier("Aragorn", 80, true);
 
+//39
+Aragon.ajouterArme(Gladius);
+Aragon.ajouterArme(Mortel);
+Aragon.ajouterArme(Magique);
 
-Morgane.ajouterArme(Gladius);
-Morgane.ajouterArme(Mortel);
-Morgane.ajouterArme(Magique);
+//40
+Morgane.Equiper(Cerisier);
+Morgane.Equiper(Erable);
+Morgane.Equiper(LameNoire);
 
-Morgane.Equiper(Mortel);
+System.out.println(Morgane);
+
+Guerrier Mulan = new Guerrier("Mulan",50,true);
+Magicien Merlin = new Magicien("Merlin",70,false);
+
+Merlin.attaquer(Mulan);
+System.out.println(Mulan);
+if (Mulan.estVivant()==true) System.out.println("Mulan est vivant");
+else System.out.println("Mulan est mort");
+
+Mulan.attaquer(Merlin);
+System.out.println(Merlin);
+System.out.println(Mulan);
 
 
 
+// pour 60 et 62 on a déjà défini des personnages que l'on va utiliser pour le combat 
+
+
+//62
+// Attribuer une épée et un bâton au Guerrier et au Magicien
+Gandalf.ajouterArme(Chene);    // Ajouter le bâton "Chêne" au Magicien
+Gandalf.ajouterArme(Charme);   // Ajouter le bâton "Charme" au Magicien
+
+Conan.ajouterArme(Exca);  // Ajouter l'épée "Excalibur" au Guerrier
+Conan.ajouterArme(Durandal);   // Ajouter l'épée "Durandal" au Guerrier
+
+//63
+// Choisir l'arme pour chaque personnage
+Gandalf.Equiper(Chene);   // Équiper le bâton "Chêne" pour Gandalf
+Conan.Equiper(Exca); // Équiper l'épée "Excalibur" pour Conan
+
+//64
+// Faire attaquer le Magicien
+Gandalf.attaquer(Conan);  // Gandalf attaque Conan
+
+// Visualiser les données des deux personnages
+System.out.println(Gandalf);  // Afficher les informations sur Gandalf
+System.out.println(Conan);    // Afficher les informations sur Conan
+
+//65
+// Faire attaquer le Guerrier
+Conan.attaquer(Gandalf);    // Conan attaque Gandalf
+
+// Visualiser les données des deux personnages après l'attaque
+System.out.println(Gandalf);  // Afficher les informations sur Gandalf
+System.out.println(Conan);    // Afficher les informations sur Conan
+
+//66
+// Vérifier si les personnages sont vivants après les attaques
+if (Gandalf.estVivant()) {
+    System.out.println("Gandalf est vivant");
+} else {
+    System.out.println("Gandalf est mort");
+}
+
+if (Conan.estVivant()) {
+    System.out.println("Conan est vivant");
+} else {
+    System.out.println("Conan est mort");
+}
+
+}
 
 
     }
-}
+    
+
    

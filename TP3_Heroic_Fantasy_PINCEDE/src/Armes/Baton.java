@@ -22,6 +22,9 @@ public class Baton extends Arme {
     public String toString() {
         return "Baton{" + "age=" + age + '}';
     }
-    
+        public int getMultiplicateur() {
+        return age;  // Le multiplicateur est l'âge du bâton
+    }
+
     }   
 

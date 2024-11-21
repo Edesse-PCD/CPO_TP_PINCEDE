@@ -14,7 +14,7 @@ public class Guerrier extends Personnage{
     
 //23    
     boolean cheval;
-    
+    private int nbguerriers =0;
 //24
     public Guerrier(String nom, int vie, boolean cheval) {
         super(nom, vie);
@@ -25,10 +25,15 @@ public class Guerrier extends Personnage{
     public void setCheval(boolean cheval) {
         this.cheval = cheval;
     }
-    
-    
 
+    public int getNbguerriers() {
+        return nbguerriers;
+    }
     
     
-    
+   // Getter pour cheval
+    public boolean isCheval() {
+        return cheval;
+    }
+  
 }
