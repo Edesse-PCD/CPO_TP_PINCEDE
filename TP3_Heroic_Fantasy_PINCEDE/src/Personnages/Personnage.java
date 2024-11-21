@@ -18,10 +18,15 @@ abstract public class Personnage {
         this.vie = vie;
     }
 
-    @Override
-    public String toString() {
-        return "Personnage{" + "nom=" + nom + ", vie=" + vie + '}';
-    }
+        @Override
+        public String toString() {
+            return "Personnage{" + "nom=" + nom + ", vie=" + vie + '}';
+        }
+
+    
+    
+      //36 Méthode toString pour afficher les informations sur l'arme équipée
+   
 
     public String getNom() {
         return nom;
@@ -44,7 +49,42 @@ abstract public class Personnage {
              Sac_à_dos.add(arme);      
          }
          
-        
-         
+   
      }
+    //33 Méthode pour équiper une arme
+    public void Equiper(Arme nomArme) {
+        for (Arme arme : Sac) {
+            if (arme != null && arme.getNom().equals(nomArme)) {
+                ArmePortee = arme;
+                System.out.println(nomArme + " a été équipée.");
+                return;  
+            }
+        }
+        System.out.println("L'arme " + nomArme + " n'a pas été trouvée dans l'inventaire.");
+    }
+  //31 Méthode pour ajouter une arme au sac
+    ArrayList<Arme> Sac = new ArrayList<Arme>(5);  // Création du sac avec une capacité de 5 armes
+     //34 La variable pour l'arme portée
+    Arme ArmePortee = null;
+    
+   
+    
+    //35 Méthode pour récupérer l'arme en main
+    public Arme getArme_en_main() {
+        return ArmePortee;
+    }
+
+    public void ajouterArme(Arme nouvelleArme){
+        for (int i =0;i<5;i++){
+            
+            if (Sac.get(i)==null){
+                 Sac.set(i, nouvelleArme);
+                 return;
+            }else
+            i+=1;
+        }
+    }
 }
+    
+         
+     

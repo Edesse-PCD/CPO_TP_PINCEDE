@@ -9,8 +9,8 @@ package Armes;
  * @author Edess
  */
 public abstract class Arme {
-   private String nom;
-   private int Nattaque;
+   public String nom;
+   public int Nattaque;
 
     public Arme(String nom, int Nattaque) {
         this.nom = nom;

@@ -4,6 +4,8 @@
  */
 package Personnages;
 
+import Armes.Arme;
+
 /**
  *
  * @author Edess
@@ -25,6 +27,7 @@ public class Guerrier extends Personnage{
     }
     
     
+
     
     
     
